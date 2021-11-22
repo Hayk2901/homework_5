@@ -1,11 +1,9 @@
 matrix = input()
 new_matrix = []
-k = 0
+k = -1
 for i in range(len(matrix)):
     if matrix[i] == '[':
         k += 1
-if k != 1:
-    k -= 1
 matrix = matrix.replace('[', '')
 matrix = matrix.replace(']', '')
 l_m = matrix.split(',')
